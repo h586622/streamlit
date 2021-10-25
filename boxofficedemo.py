@@ -1,6 +1,8 @@
 import streamlit as st
 
-st.write(""" Box Office Predictions """)
+st.title(" Box Office Predictions ")
+
+st.text_input("Name of movie", "Type here")
 
 genres = st.multiselect('Select genres:', ['Action', 'Comedy', 'Romance', 'Sci-fi'])
 
