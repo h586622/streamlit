@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 
 img = Image.open("Movie.jpg")
-
+st.image(img, width=200)
 st.title(" Box Office Predictions ")
 
 st.text_input("Name of movie", "Type here")
