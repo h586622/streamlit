@@ -10,9 +10,6 @@ st.text_input("Name of movie", "Type here")
 
 genres = st.multiselect('Select genres:', ['Action', 'Comedy', 'Romance', 'Sci-fi', 'Drama', 'Fantasy', 'Horror', 'Mystery', 'Thriller', 'Western', 'Other', 'Adventure', 'Documentary'])
 
-genresJson = []
-for g in genres:
-    genresJson = genresJson + "{'name':'" + g + "'}" 
 
 budget = st.number_input('Budget', step=100000)
 
@@ -41,4 +38,4 @@ st.button("Calculate")
 revstring = "Calculated revenue :" + "0"
 st.info(revstring)
 
-st.info(genresJson)
+st.info(genres)
