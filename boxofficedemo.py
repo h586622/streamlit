@@ -33,7 +33,7 @@ cast3 = st.text_input("Name of supporting actress")
 
 castlist = []
 if cast is not None:
-    castlist[0] = "'name' :" + cast
+    castlist.append(cast)
 #castlist[0] = "'name' :" + cast
 #castlist[1] = "'name' :" + cast2
 #castlist[2] = "'name' :" + cast3
