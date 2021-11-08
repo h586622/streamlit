@@ -28,6 +28,6 @@ keyword = st.text_input("Plot keyword")
 
 language = st.selectbox("Language spoken", ['English', 'Other'])
 
-runtime = st.number_input('Runtime', step=1)
+runtime = st.number_input('Runtime in minutes', step=1)
 
 date = st.date_input("Release date")
