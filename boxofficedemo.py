@@ -20,6 +20,7 @@ budget = st.number_input('Budget', step=100000)
 
 collection = st.checkbox("Part of a collection: ")
 
+collectionBool = 2
 if collection:
     collectionBool = 1
 else:
