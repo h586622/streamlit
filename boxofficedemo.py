@@ -32,6 +32,4 @@ runtime = st.number_input('Runtime in minutes', step=1)
 
 date = st.date_input("Release date")
 
-st.button("Calculate")
-
-st.info("Calculated revenue")
+st.button("Calculate", on_click=st.info("Calculated revenue"))
