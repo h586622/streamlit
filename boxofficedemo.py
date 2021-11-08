@@ -62,6 +62,8 @@ production_country = st.text_input("Production Country")
 date = st.date_input("Release date")
 revstring = "Calculated revenue :" 
 
+table =[]
+
 if st.button("Calculate"):
     table.append(budget)
     table.append(genres)
