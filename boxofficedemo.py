@@ -20,11 +20,10 @@ budget = st.number_input('Budget', step=100000)
 
 collection = st.checkbox("Part of a collection: ")
 
-collectionBool = 2
+collectionBool = 0
 if collection:
     collectionBool = 1
-else:
-    collectionBool = 0
+
 
 production_comp = st.selectbox("Production company", ['Disney', 'Warner Bros', 'Universal' , 'Sony', 'Paramount', 'Miramax', 'Columbia', 'Tristar' ,'20th Century','Other'])
 
