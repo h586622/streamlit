@@ -60,10 +60,22 @@ runtime = st.number_input('Runtime in minutes', step=1)
 production_country = st.text_input("Production Country")
 
 date = st.date_input("Release date")
-
-st.button("Calculate")
-
 revstring = "Calculated revenue :" 
+
+if st.button("Calculate"):
+    table.append(budget)
+    table.append(genres)
+    table.append(original_language)
+    table.append(popularity)
+    table.append(production_comp)
+    table.append(production_country)
+    table.append(original_language)
+    table.append(keyword)
+    table.append(castlist)
+    table.append(crewlist)
+    table.append(collectionBool)
+    revstring = table
+
 st.info(revstring)
 
 st.info(collectionBool)
