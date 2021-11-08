@@ -57,4 +57,4 @@ st.button("Calculate")
 revstring = "Calculated revenue :" 
 st.info(revstring)
 
-#st.info(jsonGenres)
+st.info(collectionBool)
