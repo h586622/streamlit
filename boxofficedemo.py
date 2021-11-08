@@ -31,8 +31,17 @@ cast = st.text_input("Name of main actor")
 cast2 = st.text_input("Name of supporting actor")
 cast3 = st.text_input("Name of supporting actress")
 
+castlist = []
+castlist[0] = "'name' :" + cast
+castlist[1] = "'name' :" + cast2
+castlist[2] = "'name' :" + cast3
+
 crew = st.text_input("Name of director")
 crew2 = st.text_input("Name of producer")
+
+crewlist = []
+crewlist[0] = "'name' :" + crew
+crewlist[1] = "'name' :" + crew2
 
 
 keyword = st.text_input("Plot keyword")
