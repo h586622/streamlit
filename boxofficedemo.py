@@ -34,16 +34,21 @@ cast3 = st.text_input("Name of supporting actress")
 castlist = []
 if cast is not None:
     castlist.append(cast)
-#castlist[0] = "'name' :" + cast
-#castlist[1] = "'name' :" + cast2
-#castlist[2] = "'name' :" + cast3
+if cast2 is not None:
+    castlist.append(cast2)
+if cast3 is not None:
+    castlist.append(cast3)
+
 
 crew = st.text_input("Name of director")
 crew2 = st.text_input("Name of producer")
 
-#crewlist = []
-#crewlist[0] = "'name' :" + crew
-#crewlist[1] = "'name' :" + crew2
+crewlist = []
+if crew is not None:
+    crewlist.append(crew)
+if crew2 is not None:
+    crewlist.append(crew2)
+
 
 
 keyword = st.text_input("Plot keyword")
