@@ -18,7 +18,7 @@ production_comp = st.selectbox("Production company", ['Disney', 'None'])
 
 cast = st.text_input("Name of main actor")
 cast2 = st.text_input("Name of supporting actor")
-cast3 = st.text_input("Name of supporting actor")
+cast3 = st.text_input("Name of supporting actress")
 
 crew = st.text_input("Name of director")
 crew2 = st.text_input("Name of producer")
