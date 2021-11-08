@@ -1,4 +1,5 @@
 import streamlit as st
+import json
 
 from PIL import Image
 
@@ -10,6 +11,10 @@ st.text_input("Name of movie", "Type here")
 
 genres = st.multiselect('Select genres:', ['Action', 'Comedy', 'Romance', 'Sci-fi', 'Drama', 'Fantasy', 'Horror', 'Mystery', 'Thriller', 'Western', 'Other', 'Adventure', 'Documentary'])
 
+for i in range (len(genres)):
+    genres[i] =  "'name':'" + genres[i]
+
+jsonGenres = json.dumps(genres)
 
 budget = st.number_input('Budget', step=100000)
 
@@ -38,4 +43,4 @@ st.button("Calculate")
 revstring = "Calculated revenue :" + "0"
 st.info(revstring)
 
-st.info(genres)
+st.info(jsonGenres)
