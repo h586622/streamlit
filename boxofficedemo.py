@@ -12,13 +12,18 @@ st.text_input("Name of movie", "Type here")
 genres = st.multiselect('Select genres:', ['Action', 'Comedy', 'Romance', 'Sci-fi', 'Drama', 'Fantasy', 'Horror', 'Mystery', 'Thriller', 'Western', 'Other', 'Adventure', 'Documentary'])
 
 for i in range (len(genres)):
-    genres[i] =  "'name':'" + genres[i]
+    genres[i] =  "'name' :'" + genres[i]
 
 jsonGenres = json.dumps(genres)
 
 budget = st.number_input('Budget', step=100000)
 
 collection = st.checkbox("Part of a collection: ")
+
+if collection:
+    collectionBool = 1
+else:
+    collectionBool = 0
 
 production_comp = st.selectbox("Production company", ['Disney', 'Warner Bros', 'Universal' , 'Sony', 'Paramount', 'Miramax', 'Columbia', 'Tristar' ,'20th Century','Other'])
 
