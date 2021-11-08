@@ -45,7 +45,7 @@ date = st.date_input("Release date")
 
 st.button("Calculate")
 
-revstring = "Calculated revenue :" + collectionBool
+revstring = "Calculated revenue :" 
 st.info(revstring)
 
 st.info(jsonGenres)
