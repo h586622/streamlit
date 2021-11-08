@@ -22,3 +22,12 @@ cast3 = st.text_input("Name of supporting actress")
 
 crew = st.text_input("Name of director")
 crew2 = st.text_input("Name of producer")
+
+
+keyword = st.text_input("Plot keyword")
+
+language = st.selectbox("Language spoken", ['English', 'Other'])
+
+runtime = st.number_input('Runtime')
+
+date = st.date_input("Release date")
