@@ -54,7 +54,8 @@ if crew2 is not None:
 keyword = st.text_input("Plot keyword")
 
 language = st.selectbox("Language spoken", ['English', 'Other'])
-
+original_language = st.selectbox("Original Language", ['en', 'other'])
+popularity = st.select_slider("Expected Popularity", 0,100 )
 runtime = st.number_input('Runtime in minutes', step=1)
 
 date = st.date_input("Release date")
