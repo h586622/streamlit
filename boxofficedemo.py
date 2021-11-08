@@ -1,4 +1,4 @@
-import streamlit as st
+nimport streamlit as st
 
 from PIL import Image
 
@@ -34,5 +34,7 @@ date = st.date_input("Release date")
 
 st.button("Calculate")
 
-revstring = "Calculated revenue " + "0"
+revstring = "Calculated revenue :" + "0"
 st.info(revstring)
+
+st.info(genres)
