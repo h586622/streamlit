@@ -1,6 +1,6 @@
 import streamlit as st
 import json
-from pycaret.classification import load_model, predict_model
+#from pycaret.classification import load_model, predict_model
 from PIL import Image
 
 #model = load_model('BoxOfficeModel')
