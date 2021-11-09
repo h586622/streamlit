@@ -3,7 +3,7 @@ import json
 from pycaret.classification import load_model, predict_model
 from PIL import Image
 
-model = load_model('BoxOfficeModel')
+#model = load_model('BoxOfficeModel')
 
 img = Image.open("Movie.jpg")
 st.image(img, width=200)
@@ -78,7 +78,8 @@ if st.button("Calculate"):
     table.append(castlist)
     table.append(crewlist)
     table.append(collectionBool)
-    revstring = predict_model(model, data=table)
+    #revstring = predict_model(model, data=table)
+    revstring = table
 
 st.info(revstring)
 
