@@ -1,7 +1,9 @@
 import streamlit as st
 import json
-
+from pycaret.classification import load_model, predict_model
 from PIL import Image
+
+model = load_model('BoxOfficeModel')
 
 img = Image.open("Movie.jpg")
 st.image(img, width=200)
@@ -76,7 +78,7 @@ if st.button("Calculate"):
     table.append(castlist)
     table.append(crewlist)
     table.append(collectionBool)
-    revstring = table
+    revstring = predict_model(model, data=table)
 
 st.info(revstring)
 
